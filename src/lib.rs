@@ -23,6 +23,6 @@ fn process_instruction(
         data: vec![],
     };
 
-    invoke(&instruction, &[data_account.clone()]);
+    invoke(&instruction, &[data_account.clone()])?;
     Ok(())
 }
